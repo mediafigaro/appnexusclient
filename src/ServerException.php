@@ -18,7 +18,7 @@ class ServerException extends RuntimeException
      */
     public function __construct(stdClass $response)
     {
-        parent::__construct(@$response->error);
+        parent::__construct($response->error);
         $this->response = $response;
     }
 

@@ -139,9 +139,9 @@ class HttpClient
             throw new RuntimeException(sprintf('Unexpected response: %s', $rawResponse));
         }
         $response = $response->response;
-        if ('OK' == @$response->status) {
+        if ('OK' == $response->status) {
             return $response;
-        } elseif ('NOAUTH' == @$response->error_id) {
+        } elseif ('NOAUTH' == $response->error_id) {
             throw new TokenExpiredException($response);
         }
         throw new ServerException($response);

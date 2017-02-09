@@ -1,7 +1,7 @@
 <?php
 namespace F3\AppNexusClient;
 
-interface TokenStorage
+interface TokenStorageInterface
 {
 	/**
 	 * set

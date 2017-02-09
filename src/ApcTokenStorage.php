@@ -9,7 +9,7 @@ namespace F3\AppNexusClient;
  * @author Federico Nicolás Motta <fedemotta@gmail.com>
  * @license http://opensource.org/licenses/mit-license.php The MIT License (MIT)
  */
-class ApcTokenStorage implements TokenStorage
+class ApcTokenStorage implements TokenStorageInterface
 {
     private $prefix;
     private $ttl;
